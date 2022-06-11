@@ -2,7 +2,7 @@ import { ThumbsUp, Trash } from 'phosphor-react'
 import { Avatar } from '../Avatar'
 import styles from './style.module.css'
 
-export const Comment = () => {
+export const Comment = ({ content }) => {
   return(
     <div className={styles.comment}>
       <Avatar hasBorder={false} src="https://github.com/RoneBS.png" alt="" />
@@ -20,7 +20,7 @@ export const Comment = () => {
             </button>
           </header>
 
-          <p>Muito bom Devon, parabéns!! 👏👏</p>
+          <p>{content}</p>
         </div>
 
         <footer>
